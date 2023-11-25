@@ -1,0 +1,56 @@
+    /* Estilos generales para la sección de ayuda */
+    .ayuda-seccion {
+        text-align: center;
+        padding: 20px;
+        background-color: aliceblue;
+        margin-top: 20px;
+        margin-left: 10%; /* Margen izquierdo en pantallas más grandes */
+        margin-right: 10%; /* Margen derecho en pantallas más grandes */
+        margin-bottom: 0.2rem;
+        border-radius: 10px;
+        box-shadow: 0px 0px 13px rgb(0, 0, 0); /* Sombra */
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    /* Estilo para el título */
+    .ayuda-seccion h2 {
+        color: rgb(215, 86, 63);
+        font-size: 24px;
+        font-weight: bolder;
+        margin-bottom: 20px;
+    }
+
+    /* Estilos para cada elemento de ayuda */
+    .ayuda-item {
+        display: inline-table;
+        margin: 0.5rem;
+        width: 225px;
+        height: 163px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        max-width: 220px;
+        border: 2px solid #333;
+        border-radius: 10px;
+        background-color: aliceblue;
+        transition: background-color 0.3s, transform 0.3s;
+      
+    }
+    .ayuda-item:hover{
+        background-color:rgba(247, 101, 76, 0.658);
+        transform: scale(1.05);
+    }
+
+    /* Estilos para el ícono */
+    .ayuda-icono {
+        width: 100px;
+        height: 100px;
+        margin-top: 0.5rem;
+    }
+
+    /* Estilos para el texto */
+    .ayuda-texto {
+        color: #000000;
+        font-size: 16px;
+        margin: 0.5rem;
+        font-family: 'Montserrat', sans-serif;
+    }

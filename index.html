@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visita Peru</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="slider.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="fondo.css">
+    <link rel="stylesheet" type="text/css" href="columnas.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+    <link rel="stylesheet" type="text/css" href="ayuda.css">
+    <link rel="stylesheet" type="text/css" href="descripcion.css">
+    
+    
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+
+    $(document).ready(function () {
+        // Selecciona el enlace "Conoce Más" por su texto
+        $('a:contains("Conoce Más")').click(function (event) {
+            event.preventDefault(); // Evita la navegación normal del enlace
+            // Desplázate suavemente a la sección de características
+            $('html, body').animate({
+                scrollTop: $('#caracteristicas').offset().top
+            }, 1000); // 1000 milisegundos para la animación (1 segundo)
+        });
+    });
+    $(document).ready(function () {
+        // Selecciona el enlace "Conoce Más" por su texto
+        $('a:contains("Nosotros")').click(function (event) {
+            event.preventDefault(); // Evita la navegación normal del enlace
+            // Desplázate suavemente a la sección de características
+            $('html, body').animate({
+                scrollTop: $('#descripcion').offset().top
+            }, 1000); // 1000 milisegundos para la animación (1 segundo)
+        });
+    });
+    
+    function redirigir(seleccion) {
+            // Determina qué contenedor se hizo clic y crea la URL de redirección
+            let url = `muestra.html?seleccion=${seleccion}`;
+            window.location.href = url; // Redirige a muestra.html con la selección como parámetro
+        }
+
+</script>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo_gris.PNG" alt="Logo de la empresa"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="https://www.kayak.com.mx/flights/TLC-LIM/2023-12-08/2023-12-13?sort=bestflight_a&fs=cfc=0;baditin=baditin;bfc=0;airports=LIM,MEX,NLU,TLC">Contrata Ahora</a></li>
+                <li><a href="#">Conoce Más</a></li>
+                <li><a href="#">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <div class="slides">
+            <div class="slide slide-1">
+                 <img src="https://images.unsplash.com/photo-1632913582790-d0ec5882095a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80"alt="imagen 1">
+            </div>
+            <div class="slide slide-2">
+                <img src="https://images.unsplash.com/photo-1545330785-15356daae141?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1980&q=80" alt="imagen 2">
+            </div>
+            <div class="slide slide-3">
+                <img src="https://images.unsplash.com/photo-1531968455001-5c5272a41129?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2106&q=80" alt="imagen 3">
+            </div>
+            <div class="slide slide-4">
+                 <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"alt="imagen 4">
+            </div>
+            <div class="slider-text">
+                <h1>Viaja Perú</h1> 
+            </div>
+        </div>
+      
+         <div class="titulo_conocemas"> 
+            <h2>Conoce Más</h2>
+        </div>  
+        
+        <!--CONTENEDORES IMAGENES-->
+        <div class="caracteristicas" id="caracteristicas">
+            
+            <div class="caracteristica" onclick="redirigir('gastronomia')">
+                <a href="#">
+                    <img class="caracteristica__imagen" src="https://images.unsplash.com/photo-1535400255456-984241443b29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Gastronomía en Perú">
+                    <div class="contenedor_caracteristica__texto">
+                        <p class="caracteristica__texto">Gastronomía</p>
+                    </div>
+                    
+                </a>
+            </div>
+            <div class="caracteristica"  onclick="redirigir('experiencias')">
+                <a href="#">
+                    <img class="caracteristica__imagen" src="https://images.unsplash.com/photo-1511078752275-01149d10e0c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Experiencias en Perú">
+                    <div class="contenedor_caracteristica__texto">
+                        <p class="caracteristica__texto">Experiencias</p>
+                    </div>
+                </a>
+            </div>
+            <div class="caracteristica" onclick="redirigir('conoce')">
+                <a href="#">
+                    <img class="caracteristica__imagen" src="https://images.unsplash.com/photo-1518259102261-b40117eabbc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Lugares Turísticos en Perú">
+                    <div class="contenedor_caracteristica__texto">
+                        <p class="caracteristica__texto">Conoce</p>
+                    </div>
+                </a>
+            </div>
+            <div class="caracteristica" onclick="redirigir('historia')">
+                <a href="#">
+                    <img class="caracteristica__imagen" src="https://images.unsplash.com/photo-1472982728022-601a8d99e9af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80" alt="Lugares Turísticos en Perú">
+                    <div class="contenedor_caracteristica__texto">
+                        <p class="caracteristica__texto">Historia</p>
+                    </div>
+                </a>
+            </div>
+            <div class="caracteristica"  onclick="redirigir('tradiciones')">
+                <a href="#">
+                    <img class="caracteristica__imagen" src="https://images.unsplash.com/photo-1589682449071-d13c27d1c298?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Lugares Turísticos en Perú">
+                    <div class="contenedor_caracteristica__texto">
+                        <p class="caracteristica__texto">Tradiciones</p>
+                    </div>
+                </a>
+            </div>
+            <div class="caracteristica"  onclick="redirigir('disfruta')">
+                <a href="#">
+                    <img class="caracteristica__imagen" src="https://images.unsplash.com/photo-1490284791518-607d4eaa9833?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1931&q=80" alt="Lugares Turísticos en Perú">
+                    <div class="contenedor_caracteristica__texto">
+                        <p class="caracteristica__texto">Disfruta</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Agrega más características según tus necesidades -->
+        </div>
+        <div class="container_descripcion" id="descripcion">
+            <div class="skying-description">
+                <h2 class="titulo_descripcion">Bienvenido a Skying</h2>
+                <p>Tu puerta de entrada al mundo. En Skying una agencia de viajes dedicada a crear experiencias inolvidables para nuestros clientes. en Skying te llevamos a los destinos más deslumbrantes y emocionantes del planeta. Con expertos en viajes que conocen cada rincón del globo, te garantizamos aventuras llenas de diversión y cultura en cada viaje.</p>
+                <p>Descubre el mundo con Skying y vive la aventura de tu vida.</p>
+            </div>
+        </div>
+        <!--MODULO DE AYUDA-->
+        <section class="ayuda-seccion">
+            <h2>TE AYUDAMOS EN TU VIAJE</h2>
+            <div class="ayuda-item">
+                <img class="ayuda-icono" src="ayuda imagenes/avion.png" alt="Avión">
+                <p class="ayuda-texto">Asistencia en la reserva de vuelos</p>
+            </div>
+            <div class="ayuda-item">
+                <img class="ayuda-icono" src="ayuda imagenes/maletas.png" alt="Mundo">
+                <p class="ayuda-texto">Información sobre destinos</p>
+            </div>
+            <div class="ayuda-item">
+                <img class="ayuda-icono" src="ayuda imagenes/minibar.png" alt="Consejos">
+                <p class="ayuda-texto">Consejos de viaje personalizados</p>
+            </div>
+            <div class="ayuda-item">
+                <img class="ayuda-icono" src="ayuda imagenes/hotel.png" alt="Alojamiento">
+                <p class="ayuda-texto">Reserva de alojamiento</p>
+            </div>
+            <div class="ayuda-item">
+                <img class="ayuda-icono" src="ayuda imagenes/reloj.png" alt="Itinerarios">
+                <p class="ayuda-texto">Asistencia en itinerarios</p>
+            </div>
+        </section>
+    
+    </main>
+    <footer>
+        <div class="logo-footer">
+            <img src="logo_gris.PNG" alt="Logo">
+        </div>
+        <div class="redes-sociales">
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/800px-Facebook_icon.svg.png" alt="Facebook"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3938/3938028.png" alt="Twitter"></a>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram"></a>
+        </div>
+        <div class="contacto">
+            <p>Contacto: turismo@Skying.com</p>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Skying. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

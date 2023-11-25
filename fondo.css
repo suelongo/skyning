@@ -1,0 +1,30 @@
+.contenido-con-fondo {
+    position: relative;
+}
+
+.fondo-izquierdo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100%;
+    background-image: url('https://closdeschenaies.com/wp-content/uploads/2018/07/lama-1.png'); /* Reemplaza con la URL de tu imagen */
+    background-size: cover;
+    opacity: 0.5;
+}
+.fondo-derecho {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25%;
+    height: 100%;
+    background-image: url('https://th.bing.com/th/id/OIP.uYfDq-S3NqULL8XZEi05RAHaIL?pid=ImgDet&rs=1'); /* Reemplaza con la URL de tu imagen derecha */
+    background-size: cover;
+    opacity: 0.5;
+}
+@media (max-width: 767px) {
+    .fondo-izquierdo,
+    .fondo-derecho {
+        display: none;
+    }
+}

@@ -1,0 +1,114 @@
+/* estilo.css */
+body {
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.paginaMuestra {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.6)), url('tu-imagen-de-fondo.jpg');
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0.2rem;
+    opacity: 0; /* Inicialmente oculto */
+    animation: fade-in 1s ease-in-out forwards; /* Animación de entrada */
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#titulo_principal {
+    font-size: 24px;
+    color: #333;
+    font-family: 'Gabarito', sans-serif;
+    opacity: 0; /* Inicialmente oculto */
+    animation: fade-in 1s ease-in-out forwards 0.5s; /* Animación de entrada con retraso */
+}
+
+#infoMuestra {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+    opacity: 0; /* Inicialmente oculto */
+    animation: fade-in 1s ease-in-out forwards 1s; /* Animación de entrada con retraso */
+}
+
+#infoMuestra2 {
+    font-size: 16px;
+    color: #2d2d2d;
+    margin-top: 10px;
+    opacity: 0; /* Inicialmente oculto */
+    animation: fade-in 1s ease-in-out forwards 1s; /* Animación de entrada con retraso */
+}
+
+.imagenes img, .contenedor-imagen img {
+    max-width: 100%;
+    height: auto;
+    margin: 1px 0;
+    border-radius: 10px;
+    opacity: 0; /* Inicialmente oculto */
+    animation: fade-in 1s ease-in-out forwards 1.5s; /* Animación de entrada con retraso */
+}
+
+.contenedores-imagenes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    opacity: 0; /* Inicialmente oculto */
+    animation: fade-in 1s ease-in-out forwards 1.5s; /* Animación de entrada con retraso */
+}
+
+.contenedor-imagen {
+    width: 30%;
+    background-color: #ffffffca;
+    border: 1px solid #000000;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.contenedor-imagen:hover {
+    transform: scale(1.05);
+}
+
+#subtitulo1, #subtitulo2, #subtitulo3 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 767px) {
+    .contenedor-imagen {
+        width: 100%; /* Cambiamos el ancho a 100% en dispositivos móviles */
+    }
+    #infoMuestra{
+        font-size: 16px;
+        color: #333;
+        margin: 1rem;
+        text-align: justify;
+    }
+    .paginaMuestra{
+        margin-right: 0.2rem;
+        margin-left: 0.2rem;
+        padding: 0.4rem;
+    }
+    .imagenes img.ancho-completo {
+        max-width: 100%; /* Aseguramos que las imágenes ocupen todo el ancho en móviles */
+    }
+}

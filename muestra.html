@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Muestra</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+    <link rel="stylesheet" type="text/css" href="menu_muestra.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
+
+</head>
+<style>
+
+</style>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo_gris.PNG" alt="Logo de la empresa"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="https://www.kayak.com.mx/flights/TLC-LIM/2023-12-08/2023-12-13?sort=bestflight_a&fs=cfc=0;baditin=baditin;bfc=0;airports=LIM,MEX,NLU,TLC">Contrata Ahora</a></li>
+                <li><a href="index.html">Conoce Más</a></li>
+                <li><a href="index.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="paginaMuestra">
+            <h1 id="titulo_principal">Contenido de la Página de Muestra</h1>
+            <p id="infoMuestra">Un párrafo de ejemplo que describe el contenido.</p>
+            <div class="imagenes">
+               
+            </div>
+            <div class="contenedores-imagenes">
+                <div class="contenedor-imagen">
+                    <img id="imagenMuestra3" src="" alt="Imagen 3">
+                    <h2 id="subtitulo1">Título 1</h2>
+                </div>
+                <div class="contenedor-imagen">
+                    <img id="imagenMuestra4" src="" alt="Imagen 4">
+                    <h2 id="subtitulo2">Título 2</h2>
+                </div>
+                <div class="contenedor-imagen">
+                    <img id="imagenMuestra5" src="" alt="Imagen 5">
+                    <h2 id="subtitulo3">Título 3</h2>
+                </div>
+            </div>
+            <p id="infoMuestra2"></p>
+        </div>
+    </main>
+    <footer>
+        <div class="logo-footer">
+            <img src="logo_gris.PNG" alt="Logo">
+        </div>
+        <div class="redes-sociales">
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/800px-Facebook_icon.svg.png" alt="Facebook"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3938/3938028.png" alt="Twitter"></a>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram"></a>
+        </div>
+        <div class="contacto">
+            <p>Contacto: turismo@Skying.com</p>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Skying. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+   
+
+    <script>
+        // Obtén la selección de la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const seleccion = urlParams.get('seleccion');
+
+        // Configura el contenido basado en la selección
+        const paginaMuestra = document.getElementById('paginaMuestra');
+        const imagenMuestra = document.getElementById('imagenMuestra');
+        const infoMuestra = document.getElementById('infoMuestra');
+
+        if (seleccion === 'historia') {
+            titulo_principal.textContent='HISTORIA DEL PERU';
+            imagenMuestra3.src = 'https://images.unsplash.com/photo-1640549768697-6e9483127244?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80';
+            imagenMuestra4.src = 'https://images.unsplash.com/photo-1547046647-29e56de21842?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80';
+            imagenMuestra5.src = 'https://images.unsplash.com/photo-1687835073280-fd0f002062d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80';
+            subtitulo1.textContent='Sacsayhuamán';
+            subtitulo2.textContent='Machu Pichu';
+            subtitulo3.textContent='Huaca Pucllana';
+            infoMuestra.textContent = 'Perú es una nación rica en historia y patrimonio cultural que se remonta a las antiguas civilizaciones preincaicas. Su legado abarca desde las enigmáticas líneas de Nazca hasta las majestuosas construcciones incas. Entre los tesoros más emblemáticos se encuentra Machu Picchu, la ciudadela inca perdida en las alturas de los Andes, que aún hoy maravilla al mundo con su arquitectura y misterio. La fortaleza de Sacsayhuamán, en las afueras de Cuzco, es otro testimonio asombroso de la destreza de los incas en la construcción de monumentos imponentes. Por otro lado, Huaca Pucllana, en Lima, representa la grandeza de la cultura Lima, destacándose por su arquitectura piramidal en medio de la moderna metrópolis. Estos lugares son solo algunas de las maravillas que componen la rica historia peruana, un viaje a través del tiempo que nos conecta con las civilizaciones que forjaron la identidad de esta hermosa nación sudamericana.'; // Coloca aquí la información de historia
+            infoMuestra2.textContent='Estos sitios son solo una pequeña muestra de la riqueza histórica y cultural que Perú tiene para ofrecer, y cada uno de ellos juega un papel fundamental en la comprensión de la historia y el legado de esta nación sudamericana.';
+            document.title = 'Historia de Perú - Página de Muestra';
+        } else if (seleccion === 'gastronomia') {
+            titulo_principal.textContent='GASTRONOMIA DEL PERU';
+            imagenMuestra3.src = 'https://images.unsplash.com/photo-1465512861810-7dd31b34ed98?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80';
+            imagenMuestra4.src = 'https://images.unsplash.com/photo-1535400255456-984241443b29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80';
+            imagenMuestra5.src = 'https://images.unsplash.com/photo-1535399831218-d5bd36d1a6b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80';
+            subtitulo1.textContent='Mercado San Pedro';
+            subtitulo2.textContent='Chifa';
+            subtitulo3.textContent='Ceviche';
+            infoMuestra.textContent = 'La gastronomía peruana es un verdadero tesoro culinario que combina una diversidad de influencias y sabores en un mosaico de delicias. Uno de los platos más icónicos es el ceviche, una fresca preparación a base de pescado crudo o mariscos, marinados en jugo de limón y mezclados con cebolla, ají, cilantro y maíz. Este plato es un verdadero homenaje al mar y es ampliamente considerado como uno de los mejores ceviches del mundo. Otra delicia peruana es el lomo saltado, que refleja la influencia de la inmigración china en la cocina peruana. Este plato combina tiras de carne de res, cebolla, tomate y ají, saltados en un wok a fuego alto y servidos sobre papas fritas. La mezcla de sabores y texturas lo convierte en un manjar irresistible. Los mercados locales son fundamentales en la experiencia culinaria peruana. Lugares como el Mercado de San Pedro en Cuzco o el Mercado de Surquillo en Lima ofrecen una inmersión en la riqueza de los ingredientes peruanos. Aquí, se pueden encontrar productos autóctonos como papas nativas de diversos colores y formas, granos, hierbas y especias que son esenciales en la cocina peruana.';
+            infoMuestra2.textContent='La gastronomía peruana es una celebración de la diversidad, la creatividad y el legado cultural que ha dado forma a la cocina del país, haciéndola uno de los destinos gastronómicos más emocionantes del mundo.';
+            document.title = 'Gastronomía de Perú - Página de Muestra';
+        } else if (seleccion === 'conoce') {
+            titulo_principal.textContent='CULTURA DEL PERU';
+            imagenMuestra3.src = 'https://images.unsplash.com/photo-1553550765-41e7dff2bd41?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80';
+            imagenMuestra4.src = 'https://images.unsplash.com/photo-1545206085-d0e519bdcecd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80';
+            imagenMuestra5.src = 'https://images.unsplash.com/photo-1566793772361-1d5d9cefbd12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80';
+            subtitulo1.textContent='Lago Titicaca';
+            subtitulo2.textContent='Prendas Coloridas';
+            subtitulo3.textContent='Vestiment Tradicional';
+            infoMuestra.textContent = 'Las tradiciones peruanas reflejan la rica herencia cultural de los incas y otras civilizaciones ancestrales que han dejado una profunda huella en la sociedad peruana. En cuanto a las vestimentas, la influencia inca se refleja en la ropa tradicional de muchas comunidades andinas. Uno de los elementos más emblemáticos es el "poncho", que es una prenda tejida a mano con diseños coloridos y simbólicos que varían según la región. Además, las "polleras" (faldas) son comunes en la vestimenta de las mujeres andinas, y también son adornadas con patrones tradicionales y colores vivos. En algunas áreas, los hombres usan "chullos", que son gorros tejidos que protegen del frío.'; // Coloca aquí la información de cultura
+            infoMuestra2.textContent='Estas tradiciones, tanto en la vestimenta como en las creencias, son ejemplos de cómo la herencia inca y las costumbres ancestrales siguen siendo vitales en la cultura peruana, y se pueden experimentar de manera auténtica en las regiones andinas del país.';
+            document.title = 'Cultura de Perú - Página de Muestra';
+        }else if (seleccion === 'experiencias') {
+            titulo_principal.textContent='CULTURA DEL PERU';
+            imagenMuestra3.src = '';
+            imagenMuestra4.src = '';
+            imagenMuestra5.src = '';
+            subtitulo1.textContent='';
+            subtitulo2.textContent='';
+            subtitulo3.textContent='';
+            infoMuestra.textContent = 'La cultura peruana es diversa y llena de tradiciones...'; // Coloca aquí la información de cultura
+            document.title = 'Cultura de Perú - Página de Muestra';
+        }else if (seleccion === 'tradiciones') {
+            titulo_principal.textContent='CULTURA DEL PERU';
+            imagenMuestra.src = 'https://images.unsplash.com/photo-1610636409790-64cf9e17b99f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1942&q=80'; // Coloca aquí la URL de la imagen de cultura
+            imagenMuestra2.src='';
+            imagenMuestra3.src = '';
+            imagenMuestra4.src = '';
+            imagenMuestra5.src = '';
+            subtitulo1.textContent='';
+            subtitulo2.textContent='';
+            subtitulo3.textContent='';
+            infoMuestra.textContent = 'La cultura peruana es diversa y llena de tradiciones...'; // Coloca aquí la información de cultura
+            document.title = 'Cultura de Perú - Página de Muestra';
+        }else if (seleccion === 'disfruta') {
+            titulo_principal.textContent='CULTURA DEL PERU';
+            imagenMuestra.src = 'https://images.unsplash.com/photo-1610636409790-64cf9e17b99f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1942&q=80'; // Coloca aquí la URL de la imagen de cultura
+            imagenMuestra2.src='';
+            imagenMuestra3.src = '';
+            imagenMuestra4.src = '';
+            imagenMuestra5.src = '';
+            subtitulo1.textContent='';
+            subtitulo2.textContent='';
+            subtitulo3.textContent='';
+            infoMuestra.textContent = 'La cultura peruana es diversa y llena de tradiciones...'; // Coloca aquí la información de cultura
+            document.title = 'Cultura de Perú - Página de Muestra';
+        } else {
+            // Si la selección no es válida, puedes mostrar un mensaje de error o redirigir a otra página.
+            // Por ejemplo:
+            window.location.href = 'error.html';
+        }
+        function home(){
+            let url = `index.html/`;
+            window.location.href = url; 
+        }
+    </script>
+</body>
+</html>

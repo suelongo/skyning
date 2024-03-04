@@ -1,11 +1,13 @@
 body {
     display: block;
     margin: 0;
-    font-family: Arial, sans-serif;
+   
 }
 h1{
     font-size: 2rem;
     margin: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif;
 }
 .wrapper {
     display: flex;
@@ -16,12 +18,13 @@ h1{
 
 .container {
     max-width: 1200px;
+    min-height: 216.6px;
     width: 90%;
     padding: 30px;
     background: #fff;
     box-sizing: border-box;
     border-radius: 10px;
-    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
     text-align: center;
     margin: 20px;
     transition: transform 0.3s;
@@ -33,7 +36,7 @@ h1{
 .circle {
     width: 200px;
     height: 200px;
-    background: url(https://images.unsplash.com/photo-1526392060635-9d6019884377?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80);
+    background: url(https://images.unsplash.com/photo-1526392060635-9d6019884377?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=320&q=80);
     border-radius: 50%;
     float: left;
     shape-outside: circle();
@@ -57,14 +60,17 @@ h1{
 }
 
 p {
+
     margin: 0;
     padding: 0;
     text-align: justify;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .card img {
     width: 100%;
-    height: auto;
+    max-height: 216.6px;
+    min-height: 216.6px;
 }
 
 .card-content {
@@ -74,6 +80,7 @@ p {
 .card-content h3 {
     font-size: 28px;
     margin-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .card-content p {
@@ -88,12 +95,13 @@ p {
     background-color: #666;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 16px;
+    margin-top: 0.5rem;
+    min-block-size: 1rem;
     color: aliceblue;
     transition: transform 0.3s;
 }
 .card-content .btn:hover{
-    transform: scale(1.15);
+    transform: scale(1.05);
     background-color:coral;
 }
 

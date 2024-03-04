@@ -3,10 +3,12 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 h1{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 4px rgb(52, 51, 51);
-    font-size: 4rem;
+    font-size: 5rem;
+    text-align: center;
+    padding: 1rem;
 }
 
 .slides{

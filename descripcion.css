@@ -41,7 +41,7 @@ body {
 }
 
 .skying-description:hover {
-    background-color: lemonchiffon;
+    
     transform: scale(1.05);
 }
 

@@ -29,36 +29,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-
-    $(document).ready(function () {
-        // Selecciona el enlace "Conoce Más" por su texto
-        $('a:contains("Conoce Más")').click(function (event) {
-            event.preventDefault(); // Evita la navegación normal del enlace
-            // Desplázate suavemente a la sección de características
-            $('html, body').animate({
-                scrollTop: $('#caracteristicas').offset().top
-            }, 1000); // 1000 milisegundos para la animación (1 segundo)
-        });
-    });
-    $(document).ready(function () {
-        // Selecciona el enlace "Conoce Más" por su texto
-        $('a:contains("Nosotros")').click(function (event) {
-            event.preventDefault(); // Evita la navegación normal del enlace
-            // Desplázate suavemente a la sección de características
-            $('html, body').animate({
-                scrollTop: $('#descripcion').offset().top
-            }, 1000); // 1000 milisegundos para la animación (1 segundo)
-        });
-    });
-    
-    function redirigir(seleccion) {
-            // Determina qué contenedor se hizo clic y crea la URL de redirección
-            let url = `muestra.html?seleccion=${seleccion}`;
-            window.location.href = url; // Redirige a muestra.html con la selección como parámetro
-        }
-
-</script>
+<script src="funciones.js"></script>
 
 <body>
     <header>
@@ -190,9 +161,9 @@
             <img src="logo_gris.PNG" alt="Logo">
         </div>
         <div class="redes-sociales">
-            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/800px-Facebook_icon.svg.png" alt="Facebook"></a>
-            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3938/3938028.png" alt="Twitter"></a>
-            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/800px-Facebook_icon.svg.png" alt="Facebook"></a>
+            <a href="https://www.twitter.com"><img src="https://cdn-icons-png.flaticon.com/512/3938/3938028.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram"></a>
         </div>
         <div class="contacto">
             <p>Contacto: turismo@Skying.com</p>
